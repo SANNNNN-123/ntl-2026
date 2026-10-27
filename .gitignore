@@ -1,0 +1,59 @@
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets
+.env
+.env.*
+*.pem
+credentials.json
+secrets.json
+/notes.txt
+
+# OS and editors
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.idea/
+.vscode/
+
+# Training logs and experiment trackers
+*.log
+wandb/
+lightning_logs/
+tensorboard/
+outputs/
+checkpoints/
+
+# Model weights and generated tensors
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.npz
+*.npy
+
+# Local training runs (adapters, tokenizers, features)
+modal/runs/
+
+# Large local datasets (keep data/data.md and the small csv / sample files)
+data/pool_*.parquet
