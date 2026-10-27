@@ -34,4 +34,5 @@ modal run modal/smoke_pool_v1.py
 # Stage 1 was 2 hours 55 minutes (8,948 steps) on 145,995 rows
 # (19,450 prompts with at least 3 models, from 226,536 passages in pool_v6).
 # Stage 2 was 28 minutes on host train.csv (2,699 rows, 150 prompts).
+# Public LB 0.574 (2026-10-28). Prompt-fold mean was 0.614.
 #COST = $13.99
