@@ -18,3 +18,20 @@ modal run modal/smoke_pool_v1.py
 # That command exits after scheduling the job. The app keeps running.
 # Follow it with: modal app logs <app-id>
 # Cancelled runs wrote no COMPLETE.json, so the next run starts stage 1 over.
+
+##train_pool_v5
+# Finished pool_v5 run (2026-10-27, one H100): 2 hours 46 minutes.
+# Stage 1 was 2 hours 16 minutes (6,831 steps) on 114,801 rows
+# (8,685 prompts with at least 3 models, from 122,312 passages in pool_v5).
+# Stage 2 was 29 minutes on host train.csv (2,699 rows, 150 prompts).
+# GPU cost about $11 at $3.95/hour. CPU and memory add about $1.
+#COST = $12.54
+
+
+
+#train_pool_v6
+# Finished pool_v6 run (2026-10-27, one H100): 3 hours 24 minutes.
+# Stage 1 was 2 hours 55 minutes (8,948 steps) on 145,995 rows
+# (19,450 prompts with at least 3 models, from 226,536 passages in pool_v6).
+# Stage 2 was 28 minutes on host train.csv (2,699 rows, 150 prompts).
+#COST = $13.99
