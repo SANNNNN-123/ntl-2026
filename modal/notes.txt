@@ -1,0 +1,20 @@
+pip install modal
+
+# Log in once
+modal setup
+
+# Smoke test
+modal run modal/smoke_pool_v1.py
+
+# pool_v5 kept getting cancelled mid-training.
+# The GPU job itself was fine: loss was falling, then the log said
+# "Received a cancellation signal while processing input".
+# Not a free-tier or credit stop.
+# Cause: train.remote() left the laptop waiting on the GPU call.
+# Closing the laptop or the terminal cancelled the job.
+# --detach did not help, because the local entrypoint was still blocked on .remote().
+# Fix: main() calls train.spawn() and returns, then:
+#   modal run --detach modal/train_pool_v5.py
+# That command exits after scheduling the job. The app keeps running.
+# Follow it with: modal app logs <app-id>
+# Cancelled runs wrote no COMPLETE.json, so the next run starts stage 1 over.
