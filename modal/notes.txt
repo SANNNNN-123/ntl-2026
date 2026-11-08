@@ -42,3 +42,13 @@ modal run modal/smoke_pool_v1.py
 # Stage 2 was 28 minutes on host train.csv (2,699 rows, 150 prompts).
 # Public LB 0.574 (2026-10-28). Prompt-fold mean was 0.614.
 #COST = $13.99
+
+
+#train_pool_v7_Qwen3-14B
+# Finished pool_v7 run (2026-11-07, A100 80GB): 153,014 Stage 1 rows
+# across 20,124 prompts; Stage 1 took about 6 hours 3 minutes.
+# Stage 2 used train.csv (2,699 rows, 150 prompts), with five prompt folds
+# and a final fit. Summed logged training time was about 6 hours 59 minutes.
+# Estimated GPU cost was about $17.47 at $2.50/hour, excluding CPU and memory.
+# Public LB 0.555. Observation: Pool v7 scored below Pool v5 (0.602) and
+# Pool v6 (0.574), despite using more Stage 1 data and a larger base model.
