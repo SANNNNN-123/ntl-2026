@@ -6,6 +6,12 @@ modal setup
 # Smoke test
 modal run modal/smoke_pool_v1.py
 
+
+## setting HF_TOKEN in modal 
+## downloading the llm model will be much faster
+## hf_secret = modal.Secret.from_name("huggingface-secret-Name-that-LLM")
+
+
 # pool_v5 kept getting cancelled mid-training.
 # The GPU job itself was fine: loss was falling, then the log said
 # "Received a cancellation signal while processing input".
